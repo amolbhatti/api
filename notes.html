@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes || Amol Bhatti</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/notes.css">
+</head>
+
+<body>
+
+
+  <!-- ------------------------------------------------navbar---------------------------------- -->
+  <div class="custom-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="navbar-brand text-white">MyNotes</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/">Home <span class="sr-only"></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- ------------------------------allert--------------------------------------------------- -->
+  <div class="custom-alert">
+    
+  </div>
+
+  <!-- ----------------------------------mysection----------------------------------------- -->
+  <div class="container">
+    <div class="card my-5">
+      <div class="card-body">
+        <h5 class="card-title">My Notes</h5>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Enter Notes here</label>
+          <textarea class="form-control" id="myarea" rows="3"></textarea>
+        </div>
+        <a href="#" class="btn btn-primary" id="addnote">Add Note</a>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------view------------------------------------------------- -->
+
+  <div class="container">
+    <hr class="bg-black">
+    <h3>Notes</h3>
+    <hr>
+    <div class="row" id="custom">
+      
+
+    </div>
+
+  </div>
+
+
+
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="static/js/notes.js"></script>
+
+</html>

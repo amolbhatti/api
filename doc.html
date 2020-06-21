@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> how it works</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="stylesheet" href="static/css/detailstyle.css"> -->
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="navbar-brand">Amol Bhatti</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active menu-right">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </nav>
+    <div class="container">
+        <div class="jumbotron my-5">
+            <h1 class="display-4">Welcome to my API</h1>
+            <p class="lead">There are following public apis</p>
+            <hr class="my-4">
+            <table class="table table-sm table-responsive-xl bg-light" id="mytable">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Route</th>
+                        <th scope="col">Method</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Full Route</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>/post</td>
+                        <td>GET</td>
+                        <td>JSON</td>
+                        <td><a href="http://amolbhatti.website/post">http://amolbhatti.website/post</a></td>
+                        <td>Get all data</td>
+                        <td><a href="/doc/docOne">Details...</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>/post/{id}</td>
+                        <td>GET</td>
+                        <td>JSON</td>
+                        <td class="text-primary">http://amolbhatti.website/post/{id}
+                        </td>
+                        <td>Get a single data</td>
+                        <td><a href="/doc/docTwo">Details...</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>/post/create</td>
+                        <td>POST</td>
+                        <td>JSON</td>
+                        <td><a href="http://amolbhatti.website/post/create">http://amolbhatti.website/post/create</a></td>
+                        <td>Create new record in database</td>
+                        <td><a href="/doc/docThree">Details...</a></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>/post/update/{id}</td>
+                        <td>PATCH</td>
+                        <td>JSON</td>
+                        <td class="text-primary">http://amolbhatti.website/post/update/{id}
+                        </td>
+                        <td>Update a record in database</td>
+                        <td><a href="/doc/docFour">Details...</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>/post/delete/{id}</td>
+                        <td>DELETE</td>
+                        <td>JSON</td>
+                        <td class="text-primary">http://amolbhatti.website/post/delete/{id}
+                        </td>
+                        <td>Delete a record in database</td>
+                        <td><a href="/doc/docFive">Details...</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</html>
