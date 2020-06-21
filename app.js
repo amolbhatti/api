@@ -44,6 +44,6 @@ db.once('open',()=>{
 });
 
 // listening to the server
-app.listen(8000, () => {
+app.listen(3000, () => {
     console.log("server started");
 })
